@@ -1,0 +1,16 @@
+{
+  "issuer": "https://localhost:7057/",
+  "authorization_endpoint": "https://localhost:7057/authorize",
+  "token_endpoint": "https://localhost:7057/oauth/token",
+  "device_authorization_endpoint": "https://localhost:7057/oauth/device/code",
+  "userinfo_endpoint": "https://localhost:7057/userinfo",
+  "mfa_challenge_endpoint": "https://localhost:7057/mfa/challenge",
+  "jwks_uri": "https://localhost:7057/.well-known/jwks.json",
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "email_verified"
+  ]
+}
+
