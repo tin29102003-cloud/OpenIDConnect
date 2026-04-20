@@ -98,3 +98,12 @@ C:\Users\Victus\source\repos\MyOidcServer\OidcServer\obj\Debug\net10.0\OidcServe
 C:\Users\Victus\source\repos\MyOidcServer\OidcServer\obj\Debug\net10.0\ref\OidcServer.dll
 C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\OidcDiscovery\jwks.json
 C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\OidcDiscovery\openid-configuration.json
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\obj\Debug\net10.0\OidcServer.sourcelink.json
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\obj\Debug\net10.0\OidcServer.csproj.AssemblyReference.cache
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\OidcDiscovery\default-jwk.json
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Victus\source\repos\MyOidcServer\OidcServer\obj\Debug\net10.0\OidcServer.csproj.Up2Date

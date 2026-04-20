@@ -106,3 +106,4 @@ C:\Users\Victus\source\repos\MyOidcServer\OidcWebClient\obj\Debug\net10.0\refint
 C:\Users\Victus\source\repos\MyOidcServer\OidcWebClient\obj\Debug\net10.0\OidcWebClient.pdb
 C:\Users\Victus\source\repos\MyOidcServer\OidcWebClient\obj\Debug\net10.0\OidcWebClient.genruntimeconfig.cache
 C:\Users\Victus\source\repos\MyOidcServer\OidcWebClient\obj\Debug\net10.0\ref\OidcWebClient.dll
+C:\Users\Victus\source\repos\MyOidcServer\OidcWebClient\obj\Debug\net10.0\OidcWebClient.sourcelink.json

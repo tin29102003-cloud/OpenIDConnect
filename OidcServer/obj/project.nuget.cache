@@ -1,8 +1,28 @@
 {
   "version": 2,
-  "dgSpecHash": "+RqWg4fzI8I=",
+  "dgSpecHash": "pkvKZwxhho4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Victus\\source\\repos\\MyOidcServer\\OidcServer\\OidcServer.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Victus\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.17.0\\microsoft.identitymodel.abstractions.8.17.0.nupkg.sha512",
+    "C:\\Users\\Victus\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.17.0\\microsoft.identitymodel.jsonwebtokens.8.17.0.nupkg.sha512",
+    "C:\\Users\\Victus\\.nuget\\packages\\microsoft.identitymodel.logging\\8.17.0\\microsoft.identitymodel.logging.8.17.0.nupkg.sha512",
+    "C:\\Users\\Victus\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.17.0\\microsoft.identitymodel.tokens.8.17.0.nupkg.sha512",
+    "C:\\Users\\Victus\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.17.0\\system.identitymodel.tokens.jwt.8.17.0.nupkg.sha512",
+    "C:\\Users\\Victus\\.nuget\\packages\\system.security.claims\\4.3.0\\system.security.claims.4.3.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Security.Claims will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\Users\\Victus\\source\\repos\\MyOidcServer\\OidcServer\\OidcServer.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Victus\\source\\repos\\MyOidcServer\\OidcServer\\OidcServer.csproj",
+      "libraryId": "System.Security.Claims",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

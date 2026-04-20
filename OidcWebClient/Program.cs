@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using OidcWebClient.Extensions;
 
 namespace OidcWebClient
 {
@@ -16,29 +17,29 @@ namespace OidcWebClient
             }
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            
+            builder.Services.AddOidcAuthentication(builder.Configuration);
             // Add OIDC Authentication
-            builder.Services
-                .AddAuthentication(options =>
-                {
-                    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;//dắng ký scheme mặc định là cookie
-                    options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
-                })
-                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
-                {
-                    options.Authority = builder.Configuration["Oidc:Authority"];//này là URL của Identity Provider (IdP) mà bạn muốn kết nối đến
-                    options.ClientId = builder.Configuration["Oidc:ClientId"];//này là ID của ứng dụng của bạn đã đăng ký với IdP
-                    options.ClientSecret = builder.Configuration["Oidc:ClientSecret"];//key bí mật của ứng dụng của bạn đã đăng ký với IdP
-                    options.UsePkce = true;
-                    options.ResponseType = OpenIdConnectResponseType.Code;
-                    options.SaveTokens = true;
-                    //options.GetClaimsFromUserInfoEndpoint = true;//dòng này là để lấy thông tin người dùng từ UserInfo Endpoint của IdP sau khi đã nhận được mã xác thực (authorization code)
-                    //options.Scope.Add("openid");
-                    //options.Scope.Add("profile");
-                    //options.Scope.Add("email");
-                });
-            
+            //builder.Services
+            //    .AddAuthentication(options =>
+            //    {
+            //        options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;//dắng ký scheme mặc định là cookie
+            //        options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+            //    })
+            //    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
+            //    .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
+            //    {
+            //        options.Authority = builder.Configuration["Oidc:Authority"];//này là URL của Identity Provider (IdP) mà bạn muốn kết nối đến
+            //        options.ClientId = builder.Configuration["Oidc:ClientId"];//này là ID của ứng dụng của bạn đã đăng ký với IdP
+            //        options.ClientSecret = builder.Configuration["Oidc:ClientSecret"];//key bí mật của ứng dụng của bạn đã đăng ký với IdP
+            //        options.UsePkce = true;
+            //        options.ResponseType = OpenIdConnectResponseType.Code;//lưu ý để code thi nó mới hiện code changel và codemethod changel tokencode nó không hiện  đâu 
+            //        options.SaveTokens = true;
+            //        //options.GetClaimsFromUserInfoEndpoint = true;//dòng này là để lấy thông tin người dùng từ UserInfo Endpoint của IdP sau khi đã nhận được mã xác thực (authorization code)
+            //        //options.Scope.Add("openid");
+            //        //options.Scope.Add("profile");
+            //        //options.Scope.Add("email");
+            //    });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
